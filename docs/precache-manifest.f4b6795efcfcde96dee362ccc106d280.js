@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/hackathon-WoopSicredi-justo-chatbot/js/chunk-5e59.abccfd94.js"
   },
   {
-    "revision": "4b3024e13bcf18f292a9",
-    "url": "/hackathon-WoopSicredi-justo-chatbot/js/app.1a5ac89b.js"
+    "revision": "5b897c009ca95ae29956",
+    "url": "/hackathon-WoopSicredi-justo-chatbot/js/app.dba792ff.js"
   },
   {
-    "revision": "b807f2baa654faa828b96b83ffe8b6a5",
+    "revision": "1299160d09a96e315f8c5a621cae8600",
     "url": "/hackathon-WoopSicredi-justo-chatbot/index.html"
   },
   {
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/hackathon-WoopSicredi-justo-chatbot/css/chunk-5e59.0d2b720d.css"
   },
   {
-    "revision": "4b3024e13bcf18f292a9",
+    "revision": "5b897c009ca95ae29956",
     "url": "/hackathon-WoopSicredi-justo-chatbot/css/app.5e399ed8.css"
   }
 ];
