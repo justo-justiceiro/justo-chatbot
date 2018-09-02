@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.8938aea3583cd4b420bb9916d572d3d0.js"
+  "/precache-manifest.96c465ad5b2cf533bf71ffc86eba2756.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "justo-chatbot"});
