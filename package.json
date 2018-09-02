@@ -1,12 +1,13 @@
 {
   "name": "justo-chatbot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
+  "homepage": "https://davibusanello.github.io/hackathon-WoopSicredi-justo-chatbot/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "vue-cli-service build && rm -rf docs; cp -r dist docs && sed -i -e 's/src=\\//src=/g' docs/index.html ; sed -i -e 's/href=\\//href=/g' docs/index.html",
+    "deploy": "vue-cli-service build && rm -rf docs; cp -r dist docs",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
