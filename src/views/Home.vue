@@ -30,10 +30,17 @@
     <section class="roxo">
       <div class="content center-align">
         <h2 class="bold">Imparcialidade bancária!</h2>
-        <p>Sem vínculo com nenhum banco ou custo.<br>
+        <h4>Sem vínculo com nenhum banco ou custo.<br>
         O propósito do JUSTO é te salvar das roubadas financeiras.
-        </p>
+        </h4>
       </div>
+    </section>
+    <section>
+        <div class="content center-align row" >
+            <h2 class="bold texto-roxo">A ajuda do JUSTO não foi suficiente?</h2>
+            <h4 class="texto-roxo">Agende uma hora com um especialista da Liga da Justiça Financeira</h4>
+            <a href="" class="btn btn-large">Sim, vamos marcar!</a>
+        </div>
     </section>
     <link href='https://fonts.googleapis.com/css?family=Raleway:600,300' rel='stylesheet' type='text/css'>
   </div>
@@ -123,7 +130,7 @@ export default {
 
     }
 
-    
+
 
     .personagem .btn{
     position: absolute;
@@ -207,5 +214,14 @@ export default {
   position: absolute;
   left: 2%;
   top: 12%;
+}
+
+.btn{
+  background-color:#CA4161;
+  color:  #feeba1;
+}
+
+.texto-roxo{
+  color: #5d2845;
 }
 </style>
