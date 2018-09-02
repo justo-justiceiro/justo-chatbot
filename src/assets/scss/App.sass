@@ -83,21 +83,26 @@ input
 
 .bubble
     max-width: 300px
-    background-color: #feeba1
+    background-color: #333
+    color: #ffeba1
     padding: 16px
     border-radius: 8px
-    color: rgba(0,0,0,0.7)
     float: right
     animation: msg .25s linear
 
 .bubble.bot
-    background-color: white
+    color: rgba(0,0,0,0.7)
     float: left
     margin-right: 10px
+    background: white
 
 td
     margin-top: 30px
     margin-bottom: 10px
+    border: none
+
+tr
+    border: none
 
 .mdc-card
     background-color: white
@@ -146,6 +151,7 @@ td
 
 .chips
     margin-left: -10px
+    border-bottom: none
 
 .suggestion
     margin-top: 10px
@@ -211,8 +217,10 @@ td
 
 .avatar
     border-radius: 50%
-    height: 2em
-    width: 2em
+    height: 65px
+    width: 65px
+    background: url(../assets/img/avatarJusto.png)
+    float: left
 
 #nav
     position: fixed

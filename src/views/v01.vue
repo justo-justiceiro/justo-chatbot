@@ -70,6 +70,7 @@
 
                       <!-- Bot message types / Speech -->
 
+                      <div v-if="a.result.fulfillment.speech" class="avatar"></div>
                       <div v-if="a.result.fulfillment.speech" class="bubble bot">
                           {{a.result.fulfillment.speech}}
                       </div>
