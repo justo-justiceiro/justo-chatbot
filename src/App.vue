@@ -60,6 +60,7 @@
             </h1>
         </div>
         <!-- Chat window -->
+        <!-- eslint-disable-next-line -->
         <table v-for="a in answers" class="chat-window">
 
             <!-- Your messages -->
@@ -78,6 +79,7 @@
                     </div>
 
                     <!-- Google Assistant output -->
+                    <!-- eslint-disable-next-line -->
                     <div v-for="r in a.result.fulfillment.messages">
 
                         <!-- Bot message types / Card -->
@@ -96,6 +98,7 @@
                             <section class="mdc-card__supporting-text">
                                 {{r.formattedText}}
                             </section>
+                            <!-- eslint-disable-next-line -->
                             <section class="mdc-card__actions"
                               v-for="button in r.buttons">
                                 <a class="mdc-button mdc-button--compact themed mdc-card__action"
@@ -142,6 +145,7 @@
 
                         <div class="mdc-list-group mdc-card" v-if="r.type == 'list_card'">
                             <h3 class="mdc-list-group__subheader">{{r.title}}</h3>
+                            <!-- eslint-disable-next-line -->
                             <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list"
                               v-for="item in r.items"
                               @click="autosubmit(item.optionInfo.key)">
@@ -173,6 +177,7 @@
                         <!-- Bot message types / Suggestion Chip -->
 
                         <div v-if="r.type == 'suggestion_chips'" class="chips">
+                            <!-- eslint-disable-next-line -->
                             <div class="suggestion"
                               @click="autosubmit(s.title)"
                               v-for="s in r.suggestions">
@@ -211,7 +216,8 @@
 import { ApiAiClient } from 'api-ai-javascript';
 import config from './config';
 
-const client = new ApiAiClient({ accessToken: config.app.token }); // <- replace it with yours
+// use the config token
+const client = new ApiAiClient({ accessToken: config.app.token });
 
 export default {
   name: 'app',
@@ -227,6 +233,7 @@ export default {
     };
   },
   watch: {
+    // eslint-disable-next-line
     answers(val) {
       setTimeout(() => {
         // if new answers arrive, wait for render and then
@@ -254,17 +261,16 @@ export default {
     },
     handle(response) {
       if (response.result.fulfillment.speech || response.result.fulfillment.messages[0].type === 'simple_response') {
-        const speechText = response.result.fulfillment.speech;
-        if (speechText !== null || speechText !== '') {
-          const speech = new SpeechSynthesisUtterance(speechText);
-        } else {
-          const speech = new SpeechSynthesisUtterance(response.result.fulfillment.messages[0].textToSpeech);
+        let speechText = response.result.fulfillment.speech;
+        if (speechText === null || speechText === '') {
+          speechText = response.result.fulfillment.messages[0].textToSpeech;
         }
+        const speech = new SpeechSynthesisUtterance(speechText);
 
         speech.voiceURI = 'native';
         speech.lang = config.locale.settings.speechLang;
-
-        if (this.muted == false) window.speechSynthesis.speak(speech); // <- Speech output if microphone is allowed
+        // Speech output if microphone is allowed
+        if (this.muted === false) window.speechSynthesis.speak(speech);
       }
     },
     autosubmit(suggestion) {
@@ -278,8 +284,10 @@ export default {
       this.micro = mode;
       const self = this; // <- correct scope
 
-      if (mode == true) {
-        const recognition = new webkitSpeechRecognition(); // <- chrome speech recognition
+      if (mode === true) {
+        // chrome speech recognition
+        // eslint-disable-next-line
+        const recognition = new webkitSpeechRecognition();
 
         recognition.interimResults = true;
         recognition.lang = config.locale.settings.recognitionLang;
@@ -287,7 +295,7 @@ export default {
 
         // eslint-disable-next-line
         recognition.onresult = function (event) {
-          for (let i = event.resultIndex; i < event.results.length; ++i) {
+          for (let i = event.resultIndex; i < event.results.length; i += 1) {
             self.speech = event.results[i][0].transcript;
           }
         };
