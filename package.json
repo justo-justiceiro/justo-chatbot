@@ -14,6 +14,7 @@
     "api-ai-javascript": "^2.0.0-beta.21",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",
+    "vue-analytics": "^5.16.0",
     "vue-carousel": "^0.11.0",
     "vue-material": "^1.0.0-beta-10.2",
     "vue-router": "^3.0.1",

@@ -8567,6 +8567,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-analytics@^5.16.0:
+  version "5.16.0"
+  resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.16.0.tgz#82e88703a0678cba076d51acacd6569bc8f7d54c"
+
 vue-carousel@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/vue-carousel/-/vue-carousel-0.11.0.tgz#0e2f04abb9f21e3be09def069bc28f03b9f3bf7a"
