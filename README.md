@@ -1,6 +1,10 @@
 # hackathon-WoopSicredi justo-chatbot
 
-Equipe E2
+Educação Financeira
+
+Equipe E2 - Justo chatbot
+
+Projeto: Justo - O justiceiro do dinheiro
 
 ## Project setup
 ```
