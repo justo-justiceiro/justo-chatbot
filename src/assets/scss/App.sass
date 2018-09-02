@@ -1,0 +1,201 @@
+$color: #FF9800
+
+\:root
+    --mdc-theme-primary: $color
+
+body
+    margin: 0
+    background-color: #F5F5F5
+    font-family: 'Roboto', 'Google Sans', sans-serif
+
+.themed
+    color: $color !important
+
+.wrapper
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
+
+.wrapper.ai-window
+    padding: 1rem
+
+.up
+    font-size: 32px
+    background-color: white
+    padding: 10px
+    border-radius: 50%
+
+.title
+    vertical-align: middle
+    text-align: center
+    font-weight: 700
+    color: rgba(0,0,0,0.7)
+    margin-top: 30%
+
+.query
+    padding: 16px 0px
+    background-color: white
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+    z-index: 999
+    position: fixed
+    width: 100%
+
+.queryform
+    border: 0
+    width: 100% - 20%
+    margin-left: 60px
+    font-size: 16px
+    outline: none
+    color: rgba(0,0,0,0.8)
+    font-weight: 500
+
+    @media screen and (max-width: 320px)
+        width: 100% - 35%
+
+.iicon
+    margin-left: 20px
+    position: absolute
+    vertical-align: middle
+    color: rgba(0,0,0,0.8)
+    cursor: pointer
+
+.recording
+    color: #F44336
+
+.iicon.t2s
+    margin-left: 10px
+    margin-right: 20px
+
+    @media screen and (max-width: 720px)
+        right: 0
+
+.chat-window
+    width: 100%
+
+.bubble
+    max-width: 300px
+    background-color: #E1E1E1
+    padding: 16px
+    border-radius: 8px
+    color: rgba(0,0,0,0.7)
+    float: right
+    animation: msg .25s linear
+
+.bubble.bot
+    background-color: white
+    float: left
+    margin-right: 10px
+
+td
+    margin-top: 30px
+    margin-bottom: 10px
+
+.mdc-card
+    background-color: white
+    max-width: 300px
+    margin-bottom: 5px
+    animation: msg .45s ease-in-out
+    border-radius: 8px
+    box-shadow: 0 1px 4px 0 rgba(32, 33, 36, 0.28)
+
+.slide
+    margin: 5px
+    max-width: 300px
+
+.slider
+    max-width: 300px
+    margin-left: -5px
+
+.mdc-fab
+    background-color: white
+    color: $color
+
+.rightnav
+    margin-left: -25px
+
+    @media screen and (max-width: 720px)
+            margin-left: -25px
+
+    @media screen and (max-width: 320px)
+            margin-left: -70px
+
+.leftnav
+    margin-right: -25px
+
+    @media screen and (max-width: 720px)
+        display: none
+
+.openlink
+    vertical-align: middle
+    margin-top: -5px
+    margin-left: 5px
+
+.mdc-card__media-item
+    height: auto
+    width: 100%
+    margin-top: -5px
+
+.chips
+    margin-left: -10px
+
+.suggestion
+    margin-top: 10px
+    float: left
+    margin-left: 10px
+    padding: 10px
+    color: rgba(0,0,0,0.7)
+    background-color: white
+    border: 1.5px solid rgba(0,0,0,0.2)
+    border-radius: 50px
+    cursor: pointer
+    animation: controls .25s linear
+    text-decoration: none
+
+.suggestion:active
+    color: rgba(0,0,0,1)
+
+.suggestion:hover
+    color: $color
+    border: 1.5px solid $color
+
+.suggestion.link
+    color: white
+    background-color: $color
+    border: 1px solid $color
+
+.suggestion.link:active
+    background-color: darken($color, 10%)
+    border: 1px darken($color, 10%) solid
+
+.mdc-list-item__start-detail
+    border-radius: 50%
+
+@keyframes msg
+    0%
+        opacity: 0
+        transform: scale(0.8)
+    100%
+        opacity: 1
+        transform: scale(1)
+
+@keyframes controls
+    0%
+        transform: scaleY(0)
+    100%
+        transform: scaleY(1)
+
+.copyright
+    font-weight: 600
+    color: rgba(0,0,0,0.8)
+
+.copyright a
+    text-decoration: none
+    color: rgba(0,0,0,0.8)
+    border-bottom: 2px solid transparent
+
+.copyright a:hover
+    color: $color
+    border-bottom: 2px solid $color
+
+.google-chip
+    margin-top: 52px
