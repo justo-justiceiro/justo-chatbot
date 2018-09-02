@@ -9,6 +9,9 @@ import './registerServiceWorker';
 
 
 Vue.config.productionTip = false;
+Vue.config.baseUrl = process.env.NODE_ENV === 'production'
+  ? '/hackathon-WoopSicredi-justo-chatbot/'
+  : '/';
 Vue.use(VueCarousel);
 Vue.use(VueMaterial);
 
