@@ -14,6 +14,7 @@ Vue.use(VueCarousel);
 Vue.use(VueMaterial);
 Vue.use(VueAnalytics, {
   id: 'UA-31682808-2',
+  router,
 });
 
 new Vue({

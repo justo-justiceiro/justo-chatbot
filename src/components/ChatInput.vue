@@ -13,7 +13,7 @@
                 :placeholder="config.locale.strings.queryTitle"
                 autofocus
                 type="text"></md-input>
-        <md-button class="md-icon-button"@click="mute(true)">
+        <md-button class="md-icon-button" @click="mute(true)">
           <md-icon>volume_up</md-icon>
         </md-button>
         <md-button class="md-icon-button" @click="mute(false)">

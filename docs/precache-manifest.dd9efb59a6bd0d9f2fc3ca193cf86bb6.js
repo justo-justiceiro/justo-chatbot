@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/hackathon-WoopSicredi-justo-chatbot/js/chunk-vendors.fb8c62c7.js"
   },
   {
-    "revision": "0db2ce824fa530586b60",
-    "url": "/hackathon-WoopSicredi-justo-chatbot/js/chunk-5e59.abccfd94.js"
+    "revision": "437a8f8492c0f0834097",
+    "url": "/hackathon-WoopSicredi-justo-chatbot/js/chunk-5e59.564c09fc.js"
   },
   {
-    "revision": "5b897c009ca95ae29956",
-    "url": "/hackathon-WoopSicredi-justo-chatbot/js/app.dba792ff.js"
+    "revision": "d1262b1eee55cfe6591d",
+    "url": "/hackathon-WoopSicredi-justo-chatbot/js/app.fdf52cb2.js"
   },
   {
-    "revision": "1299160d09a96e315f8c5a621cae8600",
+    "revision": "9547e68e4b0e5d382698cdbd02934ad0",
     "url": "/hackathon-WoopSicredi-justo-chatbot/index.html"
   },
   {
@@ -32,11 +32,11 @@ self.__precacheManifest = [
     "url": "/hackathon-WoopSicredi-justo-chatbot/img/heroEscudo.a13d0883.gif"
   },
   {
-    "revision": "0db2ce824fa530586b60",
+    "revision": "437a8f8492c0f0834097",
     "url": "/hackathon-WoopSicredi-justo-chatbot/css/chunk-5e59.0d2b720d.css"
   },
   {
-    "revision": "5b897c009ca95ae29956",
+    "revision": "d1262b1eee55cfe6591d",
     "url": "/hackathon-WoopSicredi-justo-chatbot/css/app.5e399ed8.css"
   }
 ];
