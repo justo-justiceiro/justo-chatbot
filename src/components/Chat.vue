@@ -1,26 +1,35 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">Sobre</router-link> |
-      <router-link to="/v01">Justo v0.1 MVP</router-link> |
-      <router-link to="/justo">Justo, fale comigo - Dev</router-link>
-    </div>
-    <router-view/>
+  <div id="chat">
+  <md-content class="chat-modal">
+  <h1>testeste</h1>
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </md-content>
   </div>
 </template>
 
-<style lang="sass">
+<style lang="scss" scoped>
+  .chat-modal {
+    position: absolute;
+    width: 70%;
+    right: 15%;
+    height: 50%;
+    background: #808080e3;
+  }
 </style>
+
 <script>
 import { ApiAiClient } from 'api-ai-javascript';
-import config from './config';
+import config from '../config';
 
 // use the config token
 const client = new ApiAiClient({ accessToken: config.app.token });
 
 export default {
-  name: 'app',
+  name: 'chat',
   data() {
     return {
       answers: [],
