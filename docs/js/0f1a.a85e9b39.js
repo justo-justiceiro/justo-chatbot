@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["0f1a"],{"0f1a":function(o,e,n){"use strict";n.r(e);var s=function(){var o=this,e=o.$createElement,n=o._self._c||e;return n("div",{staticClass:"justo"},[o._v("\n  "+o._s(o.helo)+"\n  "),n("h1",[o._v("Olá eu sou Justo, o Justiceiro do Dinheiro")])])},t=[],u=(n("cadf"),n("551c"),n("097d"),{name:"justo",components:{}}),i=u,a=n("2877"),c=Object(a["a"])(i,s,t,!1,null,null,null);c.options.__file="Justo.vue";e["default"]=c.exports}}]);
-//# sourceMappingURL=0f1a.a85e9b39.js.map
