@@ -1,13 +1,9 @@
 <template>
   <div id="chat">
-  <md-content class="chat-modal">
-  <h1>testeste</h1>
-  <br><br>
-  <br>
-  <br>
-  <br>
-  <br>
-  </md-content>
+    <md-content class="chat-modal">
+
+    <chat-input></chat-input>
+    </md-content>
   </div>
 </template>
 
@@ -23,6 +19,7 @@
 
 <script>
 import { ApiAiClient } from 'api-ai-javascript';
+import ChatInput from './ChatInput.vue';
 import config from '../config';
 
 // use the config token
@@ -30,6 +27,9 @@ const client = new ApiAiClient({ accessToken: config.app.token });
 
 export default {
   name: 'chat',
+  components: {
+    ChatInput,
+  },
   data() {
     return {
       answers: [],

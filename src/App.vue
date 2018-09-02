@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">Sobre</router-link> |
+      <router-link to="/home">Home</router-link> |
       <router-link to="/v01">Justo v0.1 MVP</router-link> |
       <router-link to="/justo">Justo, fale comigo - Dev</router-link>
     </div>
@@ -10,8 +9,6 @@
   </div>
 </template>
 
-<style lang="sass">
-</style>
 <script>
 import { ApiAiClient } from 'api-ai-javascript';
 import config from './config';

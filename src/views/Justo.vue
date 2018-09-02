@@ -2,7 +2,7 @@
   <div class="justo">
     {{helo}}
     <h1>Olá eu sou Justo, o Justiceiro do Dinheiro</h1>
-    <chat></chat>
+    <chat :client="teste"></chat>
   </div>
 </template>
 
