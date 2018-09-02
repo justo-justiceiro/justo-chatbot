@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "/hackathon-WoopSicredi-justo-chatbot/precache-manifest.fb5ec4409018b6fc9b4f1ff37b8f7c53.js"
+  "/hackathon-WoopSicredi-justo-chatbot/precache-manifest.5951abaf8c84698ca585ff61a8026d75.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "justo-chatbot"});
