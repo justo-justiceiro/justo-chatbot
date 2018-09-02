@@ -188,14 +188,14 @@
 
                         <!-- Bot message types / Google Suggestion Chip -->
 
-                        <div v-if="r.unknown == true" class="google-chip chips">
+                        <!-- <div v-if="r.unknown == true" class="google-chip chips">
                             <a class="suggestion"
                               :href="'https://www.google.com/search?q=' + r.text"
                               target="_blank">
                                 Search for "{{r.text}}" on Google
                                 <i class="material-icons openlink">search</i>
                             </a>
-                        </div>
+                        </div> -->
 
                     </div>
                 </td>
