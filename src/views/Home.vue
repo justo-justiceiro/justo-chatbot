@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <section class="height-100">
+    <section class="height-100  bg-personagem">
       <div class="content">
       </div>
       <div class="content personagem">
@@ -59,8 +59,6 @@ export default {
     body {
         font-size: 16px;
         font-family: 'Raleway', sans-serif;
-         background: #ffeba1 url("../assets/img/heroEscudo.gif") no-repeat top right;
-         background-position-x:calc(100% + 100px);
          overflow-x: hidden;
     }
     h1 {
@@ -78,7 +76,10 @@ export default {
     section {
         display: table;
         width: 100%;
-        background: url("../assets/img/justoBG3.png") no-repeat top left;
+    }
+
+    section.bg-personagem{
+        background: url("../assets/img/justoBG3.png") no-repeat top left, url("../assets/img/heroEscudo.gif") no-repeat bottom -45px right -150px;
     }
 
     h2.bold{
@@ -121,6 +122,8 @@ export default {
         display: block;
 
     }
+
+    
 
     .personagem .btn{
     position: absolute;
