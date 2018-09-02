@@ -10,7 +10,7 @@ body
     font-size: 1.5em
     line-height: 1em
     /*padding-top: 70px*/
-    /*padding-bottom: 70px*/
+    padding-bottom: 80px
 
     #app
       background-image: none;
@@ -68,6 +68,8 @@ input
     color: rgba(0,0,0,0.8)
     cursor: pointer
 
+
+
 .recording
     color: #F44336
 
@@ -83,18 +85,18 @@ input
 
 .bubble
     max-width: 300px
-    background-color: #333
-    color: #ffeba1
+    background: white
+    color: rgba(0,0,0,0.7)
     padding: 16px
     border-radius: 8px
     float: right
     animation: msg .25s linear
 
 .bubble.bot
-    color: rgba(0,0,0,0.7)
+    background-color: #333
+    color: #ffeba1
     float: left
     margin-right: 10px
-    background: white
 
 td
     margin-top: 30px
@@ -105,12 +107,16 @@ tr
     border: none
 
 .mdc-card
-    background-color: white
+    background-color: none
     max-width: 300px
     margin-bottom: 5px
     animation: msg .45s ease-in-out
     border-radius: 8px
-    box-shadow: 0 1px 4px 0 rgba(32, 33, 36, 0.28)
+    // box-shadow: 0 1px 4px 0 rgba(32, 33, 36, 0.28)
+
+    h3
+      padding-left: 10px
+      font-size: 26px
 
 .slide
     margin: 5px
@@ -225,3 +231,31 @@ tr
 #nav
     position: fixed
     top: 0
+
+li.mdc-list-item
+  background: #5d2845
+  color: #feeba1
+  padding: 4%
+  margin: 3px 10px
+  border-radius: 20px
+  cursor: pointer
+
+li.mdc-list-item:hover
+  box-shadow: 2px 2px 2px #666
+
+input[type=text].queryform
+    width: 80%
+    background: white
+    border: none
+    border-radius: 25px
+    padding: 0 10px
+    margin-left: 50px
+
+.query
+  .wrapper
+    .iicon
+	    position:relative
+      padding-top: 15px
+
+.logo
+    margin: 20px

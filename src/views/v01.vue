@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-  <h1>Justo v0.1</h1>
+    <router-link to="/home">
+      <img src="../assets/img/escudoP.png" class="logo" alt="Escudo do Justiceiro">
+    </router-link>
     <section id ="app">
 
       <!-- The input -->
