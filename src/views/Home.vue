@@ -35,7 +35,7 @@
         </p>
       </div>
     </section>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:600,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600,300' rel='stylesheet' type='text/css'>
   </div>
 </template>
 <style lang="css">
