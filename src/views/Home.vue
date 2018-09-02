@@ -197,7 +197,7 @@ export default {
 .item-1,
 .item-2,
 .item-3 {
-    width: 90%;
+    /*width: 90%;*/
 }
 
 #logo {
