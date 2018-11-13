@@ -6,7 +6,7 @@ Equipe E2 - Justo chatbot
 
 Projeto: Justo - O justiceiro do dinheiro
 
-[App Link](https://davibusanello.github.io/hackathon-WoopSicredi-justo-chatbot/)
+[App Link](https://justo-justiceiro.github.io/justo-chatbot/)
 
 ## Social Midia
 
