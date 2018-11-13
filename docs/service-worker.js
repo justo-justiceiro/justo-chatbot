@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/hackathon-WoopSicredi-justo-chatbot/precache-manifest.96434289f2a72707efca2ac312394ec8.js"
+  "/justo-chatbot/precache-manifest.79b44cd343d290412d18f66cebacc1ee.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "justo-chatbot"});
