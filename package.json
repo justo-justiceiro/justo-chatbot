@@ -2,7 +2,10 @@
   "name": "justo-chatbot",
   "version": "0.1.4",
   "private": true,
-  "homepage": "https://davibusanello.github.io/hackathon-WoopSicredi-justo-chatbot/",
+  "homepage": "https://justo-justiceiro.github.io/justo-chatbot/",
+  "repository": {
+    "url": "https://github.com/justo-justiceiro/justo-chatbot"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

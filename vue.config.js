@@ -1,5 +1,5 @@
 module.exports = {
-  baseUrl: '/hackathon-WoopSicredi-justo-chatbot/',
+  baseUrl: '/justo-chatbot/',
 
   pwa: {
     name: 'justo-chatbot',
